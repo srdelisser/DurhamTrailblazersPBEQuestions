@@ -1,0 +1,42 @@
+v<!DOCTYPE html>
+<html>
+    <head>
+        <title>Questions Pages</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../index.js"></script>
+        <script src="jc3.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="../index.html">Home</a>
+            <a href="../question_list.html">Questions</a>
+            <a href="../1_peter/index.html">1st Peter</a>
+            <a href="../2_peter/index.html">2nd Peter</a>            
+            <a class="active" href="index.html">James</a>
+            <a href="../hebrews/index.html">Hebrews</a>
+        </div>
+
+        <div class="section">
+            <h2>Question 3</h2>
+            <p id="question">
+                What do we all stumble in? (James 3:2)
+            </p>
+            <form>
+                <label for="fname">Answer:</label><br>
+                <input type="text" id="u_answer" name="answer" placeholder="type answer here"><br><br>
+            </form>
+            <div id="answer" class="answer">
+                <b>Correct Answer:</b><br><br>
+                Many things
+            </div>
+            <br>
+            <button onclick="return_c3()">Return to Chapter 3</button>
+            <button onclick="showAnswer()">Show Answer</button>
+            <button onclick="random_c3q()">Next Question</button>
+        </div>
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+    </body>
+</html>

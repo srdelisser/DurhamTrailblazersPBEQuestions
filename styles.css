@@ -46,6 +46,7 @@ body {
     font-family: Arial;
     padding: 10px;
     background: #f1f1f1;
+
 }
 /* Style the footer */
 .footer {
@@ -58,4 +59,21 @@ body {
 .section {
     padding: 20px;
     background-color: #ebebeb;
+}
+.section2 {
+    padding: 20px;
+    background-color: #ebebeb;
+    text-align: center;
+}
+/*styling the answer*/
+
+.answer {
+    display: none;
+}
+.txtbox{
+    font-size:12pt;
+    height:100px;
+    width:400px;
+    word-wrap:soft;
+    
 }

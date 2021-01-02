@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>James Chapter 3</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../index.js"></script>
+        <script src="../hebrews.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="../../index.html">Home</a>
+            <a href="../../question_list.html">Questions</a>
+            <a href="../../1_peter/index.html">1st Peter</a>
+            <a href="../../2_peter/index.html">2nd Peter</a>            
+            <a href="../../james/index.html">James</a>
+            <a class="active"href="../../hebrews/index.html">Hebrews</a>
+        </div>
+
+        <div class="section2">
+            <h2 id="number">Question #</h2>
+            <p id="question">
+                INSERT QUESTION
+            </p>
+            <p>
+                <label for="fname">Answer:</label><br>
+                <textarea type="text" id="u_answer" name="answer" placeholder="type answer here" class="txtbox"></textarea>
+            </p>
+            <div id="answer" class="answer">
+                <b>Correct Answer:</b><br><br>
+                INSERT ANSWER
+            </div>
+            <br>
+            <button onclick="return_c3()">Return</button>
+            <button id ="show" onclick="showAnswer()">Show Answer</button>
+            <button onclick="hebrews_c5()">Next Question</button>
+        </div>
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+    </body>
+</html>
