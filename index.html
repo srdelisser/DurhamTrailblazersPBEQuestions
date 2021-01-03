@@ -7,28 +7,72 @@
     </head>
     <body>
         
-        <div class="topnav">
-            <a class ="active" href="index.html">Home</a>
-            <a href="question_list.html">Questions</a>
-            <a href="1_peter/index.html">1st Peter</a>
-            <a href="2_peter/index.html">2nd Peter</a>            
-            <a href="james/index.html">James</a>
-            <a href="hebrews/index.html">Hebrews</a>
+        <div id="login_div" class="main-div">
+            <h3>Firebase Web login Example</h3>
+            <input type="email" placeholder="Email..." id="email_field" />
+            <input type="password" placeholder="Password..." id="password_field" />
+        
+            <button onclick="login()">Login to Account</button>
         </div>
-        <div class="header">
+    
+        <div id="user_div" class="loggedin-div">
+            <h3>Welcome User</h3>
+            <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
             
-            <h1>Durham Trailblazer PBE Questions 2020-2021</h1>
-            <p>Welcome! This site is so you can practice your 
-                Bible skills!
-            </p>
-            
+            <div class="topnav">
+                <a class ="active" href="index.html">Home</a>
+                <a href="question_list.html">Questions</a>
+                <a href="1_peter/index.html">1st Peter</a>
+                <a href="2_peter/index.html">2nd Peter</a>            
+                <a href="james/index.html">James</a>
+                <a href="hebrews/index.html">Hebrews</a>
+            </div>
+
+            <div class="header">
+                
+                <h1>Durham Trailblazer PBE Questions 2020-2021</h1>
+                <p>Welcome! This site is so you can practice your 
+                    Bible skills!
+                </p>
+
+                <button onclick="logout()">Logout</button>
+            </div>        
+            <div class="section">
+                <img src="https://www.clubministries.org/wp-content/uploads/PBE_logo-300x214.png" alt="PBE logo">
+            </div>
         </div>
-        <div class="section">
-            <img src="https://www.clubministries.org/wp-content/uploads/PBE_logo-300x214.png" alt="PBE logo">
-        </div>
+
+
+
         <h1 id="bigOne"></h1>
         <div class="footer">
             <p>Footer</p>
         </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyA_AVGKAiq75HkEyeQuT1gYVKIHuVZoh_Y",
+            authDomain: "dtb-pbe-2020-2021.firebaseapp.com",
+            databaseURL: "https://dtb-pbe-2020-2021.firebaseio.com",
+            projectId: "dtb-pbe-2020-2021",
+            storageBucket: "dtb-pbe-2020-2021.appspot.com",
+            messagingSenderId: "9293003803",
+            appId: "1:9293003803:web:ecb0efa7b77301d9c48cbe",
+            measurementId: "G-FMX8LYYCJF"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+
     </body>
 </html>
