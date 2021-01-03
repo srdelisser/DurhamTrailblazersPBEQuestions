@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="../index.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class ="active" href="index.html">Home</a>
+            <a href="question_list.html">Questions</a>
+            <a href="../1_peter/index.html">1st Peter</a>
+            <a href="../2_peter/index.html">2nd Peter</a>            
+            <a href="../james/index.html">James</a>
+            <a href="../hebrews/index.html">Hebrews</a>
+        </div>
+
+        <div class="header">
+            
+            <h1>Durham Trailblazer PBE Questions 2020-2021</h1>
+            <p>Welcome! This site is so you can practice your 
+                Bible skills!
+            </p>
+
+           
+        </div>        
+        <div class="section">
+            <img src="https://www.clubministries.org/wp-content/uploads/PBE_logo-300x214.png" alt="PBE logo">
+        </div>
+
+        <div class="footer">
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyA_AVGKAiq75HkEyeQuT1gYVKIHuVZoh_Y",
+                  authDomain: "dtb-pbe-2020-2021.firebaseapp.com",
+                  databaseURL: "https://dtb-pbe-2020-2021.firebaseio.com",
+                  projectId: "dtb-pbe-2020-2021",
+                  storageBucket: "dtb-pbe-2020-2021.appspot.com",
+                  messagingSenderId: "9293003803",
+                  appId: "1:9293003803:web:2a376f236d77e1b2c48cbe",
+                  measurementId: "G-XCY84GELGH"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>
