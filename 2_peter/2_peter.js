@@ -257,7 +257,7 @@ var peter_2 = { //might need to add "james" : [] but dont have to cause chapters
         { "question" : "12.	From what would you fall from if you did not beware? (2 Peter 3:17)" , "answer" : "Your own steadfastness"},
         { "question" : "13.	What did Peter instruct them to grow pin? (2 Peter 3:18; 2pts)" , "answer" : "The grace and knowledge of our Lord & Saviour Jesus Christ"},
         { "question" : "14.	What should be to Him now & forever? (2 Peter 3:18)" , "answer" : "Glory"},
-        { "question" : "15.	What is the last word in the book of 2 Peter? (2 Peter 3:18)" , "answer" : "Amen"},
+        { "question" : "15.	What is the last word in the book of 2 Peter? (2 Peter 3:18)" , "answer" : "Amen"}
         /*
         //
         { "question" : "" , "answer" : ""},
