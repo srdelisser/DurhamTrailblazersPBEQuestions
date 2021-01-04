@@ -169,6 +169,111 @@ var peter_1 = { //might need to add "james" : [] but dont have to cause chapters
         { "question" : "" , "answer" : ""},
         { "question" : "" , "answer" : ""},
         */
+    ],
+    "c4":[
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""}
+        /*
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        */
+    ],
+
+    "c5":[
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""}
+        /*
+        //
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        { "question" : "" , "answer" : ""},
+        */
     ]
 
         
@@ -228,6 +333,45 @@ function peter_1_c3(){
     document.getElementById("answer").innerHTML =
     "<b>"+" Correct Answer:" + "<br>"+ "</b>"+
     peter_1.c3[i].answer;
+    //hides the answer
+    document.getElementById("answer").style.display = "none";
+    //changes the button back 
+    document.getElementById("show").innerHTML ="Show Answer";
+    //erases user text
+    document.getElementById("u_answer").value = "";
+}
+function peter_1_c4(){
+    //converts the json object into somthing readable
+    //generates a random number over the length of the JSON array
+    var i = Math.floor(Math.random()*peter_1.c4.length);
+    document.getElementById("number").innerHTML = "Question #" + (i+1);
+    //puts the random question into the html
+    document.getElementById("question").innerHTML =
+    peter_1.c4[i].question;
+    //puts the correct random answer into the html
+    document.getElementById("answer").innerHTML =
+    "<b>"+" Correct Answer:" + "<br>"+ "</b>"+
+    peter_1.c4[i].answer;
+    //hides the answer
+    document.getElementById("answer").style.display = "none";
+    //changes the button back 
+    document.getElementById("show").innerHTML ="Show Answer";
+    //erases user text
+    document.getElementById("u_answer").value = "";
+}
+
+function peter_1_c5(){
+    //converts the json object into somthing readable
+    //generates a random number over the length of the JSON array
+    var i = Math.floor(Math.random()*peter_1.c5.length);
+    document.getElementById("number").innerHTML = "Question #" + (i+1);
+    //puts the random question into the html
+    document.getElementById("question").innerHTML =
+    peter_1.c5[i].question;
+    //puts the correct random answer into the html
+    document.getElementById("answer").innerHTML =
+    "<b>"+" Correct Answer:" + "<br>"+ "</b>"+
+    peter_1.c5[i].answer;
     //hides the answer
     document.getElementById("answer").style.display = "none";
     //changes the button back 
