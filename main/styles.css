@@ -77,3 +77,18 @@ body {
     word-wrap:soft;
     
 }
+/*styling the button*/
+button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    background: #5d8ffc;
+    color: #fff;
+    border: 1px solid #5d8ffc;
+}
+
+.section2 button:hover {
+    background: #fff;
+    color: #5d8ffc;
+    border: 1px solid #5d8ffc;
+    cursor: pointer;
+}
