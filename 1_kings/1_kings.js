@@ -1226,6 +1226,91 @@ function king_1_c3(){
     document.getElementById("u_answer").value = "";
 }
 
+//chapter 10
+function king_1_c10(){
+    //converts the json object into somthing readable
+    //generates a random number over the length of the JSON array
+    var i = Math.floor(Math.random()*king_1.c10.length);
+    document.getElementById("number").innerHTML = "Question #" + (i+1);
+    //puts the random question into the html
+    document.getElementById("question").innerHTML =
+    king_1.c10[i].question;
+    //puts the correct random answer into the html
+    document.getElementById("answer").innerHTML =
+    "<b>"+" Correct Answer:" + "<br>"+ "</b>"+
+    king_1.c10[i].answer ;
+    //hides the answer
+    document.getElementById("answer").style.display = "none";
+    //changes the button back 
+    document.getElementById("show").innerHTML ="Show Answer";
+    //erases user text
+    document.getElementById("u_answer").value = "";
+}
+
+//chapter 11
+function king_1_c11(){
+    //converts the json object into somthing readable
+    //generates a random number over the length of the JSON array
+    var i = Math.floor(Math.random()*king_1.c11.length);
+    document.getElementById("number").innerHTML = "Question #" + (i+1);
+    //puts the random question into the html
+    document.getElementById("question").innerHTML =
+    king_1.c11[i].question;
+    //puts the correct random answer into the html
+    document.getElementById("answer").innerHTML =
+    "<b>"+" Correct Answer:" + "<br>"+ "</b>"+
+    king_1.c11[i].answer ;
+    //hides the answer
+    document.getElementById("answer").style.display = "none";
+    //changes the button back 
+    document.getElementById("show").innerHTML ="Show Answer";
+    //erases user text
+    document.getElementById("u_answer").value = "";
+}
+
+//chapter 12
+function king_1_c12(){
+    //converts the json object into somthing readable
+    //generates a random number over the length of the JSON array
+    var i = Math.floor(Math.random()*king_1.c12.length);
+    document.getElementById("number").innerHTML = "Question #" + (i+1);
+    //puts the random question into the html
+    document.getElementById("question").innerHTML =
+    king_1.c12[i].question;
+    //puts the correct random answer into the html
+    document.getElementById("answer").innerHTML =
+    "<b>"+" Correct Answer:" + "<br>"+ "</b>"+
+    king_1.c12[i].answer ;
+    //hides the answer
+    document.getElementById("answer").style.display = "none";
+    //changes the button back 
+    document.getElementById("show").innerHTML ="Show Answer";
+    //erases user text
+    document.getElementById("u_answer").value = "";
+}
+
+//chapter 13
+function king_1_c13(){
+    //converts the json object into somthing readable
+    //generates a random number over the length of the JSON array
+    var i = Math.floor(Math.random()*king_1.c13.length);
+    document.getElementById("number").innerHTML = "Question #" + (i+1);
+    //puts the random question into the html
+    document.getElementById("question").innerHTML =
+    king_1.c13[i].question;
+    //puts the correct random answer into the html
+    document.getElementById("answer").innerHTML =
+    "<b>"+" Correct Answer:" + "<br>"+ "</b>"+
+    king_1.c13[i].answer ;
+    //hides the answer
+    document.getElementById("answer").style.display = "none";
+    //changes the button back 
+    document.getElementById("show").innerHTML ="Show Answer";
+    //erases user text
+    document.getElementById("u_answer").value = "";
+}
+
+
 //chapter 14
 function king_1_c14(){
     //converts the json object into somthing readable
