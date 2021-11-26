@@ -1230,7 +1230,7 @@ function king_1_c3(){
 function king_1_c14(){
     //converts the json object into somthing readable
     //generates a random number over the length of the JSON array
-    var i = Math.floor(Math.random()*king_14.c1.length);
+    var i = Math.floor(Math.random()*king_1.c14.length);
     document.getElementById("number").innerHTML = "Question #" + (i+1);
     //puts the random question into the html
     document.getElementById("question").innerHTML =
