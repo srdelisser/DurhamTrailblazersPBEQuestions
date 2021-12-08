@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Questions List</title>
+        <title>James Chapter 1</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+        <script src="/main/index.js"></script>
+        <script src="../james.js"></script>
     </head>
     <body>
         <div class="topnav">
-            <a href="../main/index.html">Home</a>
-            <a href="../main/question_list.html">Questions</a>
+            <a href="/main/index.html">Home</a>
+            <a href="/main/question_list.html">Questions</a>
             <div class="dropdown">
                 <button class="dropbtn">2020-2021
                     <i class="fa fa-caret-down"></i>
@@ -32,25 +34,23 @@
             </div>
         </div>
 
-        <div class="header">
-        <h1>Questions from Practice</h1>
-            <p>The links below will take you to a page with the power point that you saw in your
-                last PBE Pratice.
+        <div class="section2">
+            <h2 id="number">Question #</h2>
+            <p id="question">
+                INSERT QUESTION
             </p>
-        </div>
-        <div class="section">
-            <h2>Things to Remember</h2>
-            <ul>
-                <li><a href="powerpoints/remember/jan_23.html">2nd Peter 1:5-7</a></li>
-            </ul>
-            <h2>Past PBE Pratice Questions</h2>
-                <ul> <!--5 Chapters-->
-                    <li><a href="powerpoints/jan_15_2021.html">January 15, 2021</a></li>
-                    <li><a href="powerpoints/jan_22_2021.html">January 22, 2021</a></li>
-                    <li><a href="powerpoints/jan_23_2021.html">January 23, 2021</a></li>
-                    <li><a href="powerpoints/jan_29_2021.html">January 29, 2021</a></li>
-                    <li><a href="powerpoints/jan_30_2021.html">January 30, 2021</a></li>
-                </ul>
+            <p>
+                <label for="fname">Answer:</label><br>
+                <textarea type="text" id="u_answer" name="answer" placeholder="type answer here" class="txtbox"></textarea>
+            </p>
+            <div id="answer" class="answer">
+                <b>Correct Answer:</b><br><br>
+                INSERT ANSWER
+            </div>
+            <br>
+            <button onclick="return_c3()">Return</button>
+            <button id ="show" onclick="showAnswer()">Show Answer</button>
+            <button onclick="james_c1()">Next Question</button>
         </div>
         <div class="footer">
             <p>Is there a problem?<br>
